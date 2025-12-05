@@ -1,5 +1,4 @@
 import AboutArea from "@/components/about/about-area";
-import AmenitiesArea from "@/components/amenities/amenities-area";
 import BlogArea from "@/components/blog/blog-area";
 import HotelsGalleryArea from "@/components/gallery/hotels-gallery-area";
 import HeroBannerFive from "@/components/hero-banner/hero-banner-5";
@@ -18,9 +17,6 @@ export default function SeaHotelPage() {
       <HeroBannerFive />
       {/* hero banner area end */}
 
-      {/* amenities area start */}
-      <AmenitiesArea/>
-      {/* amenities area end */}
 
       {/* about area start */}
       <AboutArea/>
