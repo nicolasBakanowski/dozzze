@@ -1,29 +1,26 @@
 "use client";
 import Image from "next/image";
-import AboutAreaInverse from "./about-area-inverse";
-import AboutAreaDarkRio from "./about-area-dark-rio";
-import AboutAreaLightMaroto from "./about-area-light-maroto";
 import { CheckSvg } from "../svg";
 
-const aboutImageSrc = "/dozzze/imagenes%20hoteles/ATyco%20Madrid/630465984.jpg";
+const imageSrc = "/dozzze/imagenes%20hoteles/dozZze-madrid%20Rio/696278866.jpg";
 const services = [
   "Apartamentos",
   "Baño privado",
-  "WiFi gratis",
-  "Vistas",
+  "Admite mascotas",
   "Adaptado personas de movilidad reducida",
-  "Bañera o ducha",
-  "Cocina",
-  "Aire acondicionado",
+  "Ducha",
   "Habitaciones familiares",
+  "Aire acondicionado",
+  "Cocina",
   "Habitaciones sin humo",
+  "Minibar",
 ];
 
-export default function AboutArea() {
+export default function AboutAreaDarkRio() {
   const half = Math.ceil(services.length / 2);
   const columns = [services.slice(0, half), services.slice(half)];
 
-  const content = (
+  return (
     <div
       className="tp-about-us-area tp-about-spacing tp-section-black p-relative"
       style={{ marginTop: "40px", paddingTop: "60px", paddingBottom: "30px" }}
@@ -40,15 +37,13 @@ export default function AboutArea() {
               data-wow-duration="1s"
             >
               <h6 className="tp-section-title-pre-yellow tp-section-title-pre mb-5">
-                ATyCO Madrid
+                Dozzze Madrid Río
               </h6>
               <h2 className="tp-section-title-white tp-section-title mb-40">
-                ¿Por qué elegirnos?
+                Vida junto al Manzanares
               </h2>
               <p className="tp-section-title-content mb-30">
-                ATyCO Madrid está en Madrid, a 3,5 km de Estadio Santiago
-                Bernabéu y a 3,5 km de Museo Thyssen-Bornemisza, y dispone de
-                vistas a la ciudad.
+                DozZze - Madrid Río está en Madrid, a 2,4 km de Royal Palace of Madrid y a 2,5 km de Mercado de San Miguel.
               </p>
             </div>
             <div className="row">
@@ -77,8 +72,8 @@ export default function AboutArea() {
           <div className="col-lg-6 md-relative">
             <Image
               className="tp-about-right-img"
-              src={aboutImageSrc}
-              alt="ATyCO Madrid"
+              src={imageSrc}
+              alt="Dozzze Madrid Río"
               width={960}
               height={640}
               style={{ height: "auto" }}
@@ -87,14 +82,5 @@ export default function AboutArea() {
         </div>
       </div>
     </div>
-  );
-
-  return (
-    <>
-      {content}
-      <AboutAreaInverse />
-      <AboutAreaDarkRio />
-      <AboutAreaLightMaroto />
-    </>
   );
 }
