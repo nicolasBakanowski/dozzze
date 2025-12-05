@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import AboutAreaInverse from "./about-area-inverse";
 import { CheckSvg } from "../svg";
 
 const aboutImageSrc = "/dozzze/imagenes%20hoteles/ATyco%20Madrid/630465984.jpg";
@@ -17,17 +16,27 @@ const services = [
   "Habitaciones sin humo",
 ];
 
-export default function AboutArea() {
+export default function AboutAreaInverse() {
   const half = Math.ceil(services.length / 2);
   const columns = [services.slice(0, half), services.slice(half)];
 
-  const content = (
+  return (
     <div
       className="tp-about-us-area tp-about-spacing tp-section-black p-relative"
       style={{ marginTop: "40px", paddingTop: "60px", paddingBottom: "30px" }}
     >
       <div className="container">
         <div className="row">
+          <div className="col-lg-6 md-relative mb-40 mb-lg-0" style={{ minHeight: 400 }}>
+            <Image
+              className="tp-about-right-img"
+              src={aboutImageSrc}
+              alt="ATyCO Madrid"
+              width={960}
+              height={640}
+              style={{ height: "auto", left: 0, right: "auto" }}
+            />
+          </div>
           <div
             className="col-lg-6"
             style={{ paddingTop: "5px", paddingBottom: "5px" }}
@@ -72,25 +81,8 @@ export default function AboutArea() {
               ))}
             </div>
           </div>
-          <div className="col-lg-6 md-relative">
-            <Image
-              className="tp-about-right-img"
-              src={aboutImageSrc}
-              alt="ATyCO Madrid"
-              width={960}
-              height={640}
-              style={{ height: "auto" }}
-            />
-          </div>
         </div>
       </div>
     </div>
-  );
-
-  return (
-    <>
-      {content}
-      <AboutAreaInverse />
-    </>
   );
 }
