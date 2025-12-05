@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import AboutArea from "@/components/about/about-area";
+import AboutWhoWeAre from "@/components/about/about-who-we-are";
 import BlogArea from "@/components/blog/blog-area";
 import HotelsGalleryArea from "@/components/gallery/hotels-gallery-area";
 import HeroBanner from "@/components/hero-banner/hero-banner";
@@ -22,6 +23,9 @@ export default function HomeModernHotelPage() {
         <HeroBanner/>
         {/* hero banner area */}
 
+        {/* who we are */}
+        <AboutWhoWeAre />
+        {/* who we are */}
 
         {/* about area start */}
         <AboutArea/>

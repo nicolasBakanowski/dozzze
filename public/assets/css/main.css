@@ -5112,6 +5112,144 @@ input[type=color] {
 .tp-hero-form-input input.round-6.active::placeholder {
   color: var(--tp-common-black);
 }
+.tp-who-we-are {
+  background: #f5f6fb;
+}
+.tp-who-we-are-spacing {
+  padding: 110px 0;
+}
+.tp-who-we-are-lite-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 60px;
+  align-items: center;
+}
+.tp-who-we-are-lite-intro p {
+  color: #4f5362;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+.tp-who-we-are-title {
+  color: #0f0f19;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+.tp-who-we-are-flag {
+  display: inline-flex;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #e6e8ee;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #7a7f92;
+}
+.tp-who-we-are-lite-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+.tp-who-we-are-card {
+  background: #fff;
+  border-radius: 32px;
+  padding: 40px 32px;
+  border: 1px solid #eef0f5;
+  box-shadow: 0 20px 60px rgba(15, 15, 25, 0.07);
+  text-align: left;
+}
+.tp-who-we-are-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #0f0f19;
+}
+.tp-who-we-are-card p {
+  margin: 0;
+  color: #4f5362;
+  line-height: 1.6;
+}
+.tp-who-we-are-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 20px;
+  background: #f3f4f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.tp-room-highlight-shell {
+  background: #f7f8fd;
+  border-radius: 32px;
+  padding: 45px 50px;
+  border: 1px solid #edf0f7;
+  margin-top: 30px;
+}
+.tp-room-highlight-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.tp-room-highlight-card {
+  background: #fff;
+  border: 1px solid #e4e7ef;
+  border-radius: 32px;
+  padding: 36px 28px;
+  box-shadow: 0 20px 45px rgba(15, 15, 25, 0.08);
+  flex: 1 1 280px;
+  min-width: 260px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.tp-room-highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 50px rgba(15, 15, 25, 0.15);
+}
+.tp-room-highlight-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #0f0f19;
+}
+.tp-room-highlight-card p {
+  margin: 0;
+  color: #4f5362;
+  line-height: 1.7;
+}
+.tp-room-highlight-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 24px;
+  background: #f3f4f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 22px;
+}
+@media (max-width: 991px) {
+  .tp-room-highlight-grid {
+    flex-direction: column;
+  }
+  .tp-room-highlight-shell {
+    padding: 35px 24px;
+  }
+}
+@media (max-width: 1199px) {
+  .tp-who-we-are-lite-inner {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .tp-who-we-are-lite-cards {
+    grid-template-columns: 1fr;
+  }
+  .tp-who-we-are-title {
+    font-size: 34px;
+  }
+}
 .tp-hero-form-input span {
   color: #9d9c9d;
   position: absolute;
