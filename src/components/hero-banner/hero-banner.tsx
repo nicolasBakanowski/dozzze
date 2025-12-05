@@ -22,12 +22,15 @@ export default function HeroBanner() {
                   <div className="col-xl-10">
                      <div className="tp-hero-content text-center">
                         <div className="tp-hero-title-box mb-30">
-                           <h5 className="tp-hero-subtitle mb-15 wow img-custom-anim-top" data-wow-duration="1s" data-wow-delay="0.1s">Best Choice for Family</h5>
-                           <h2 className="tp-hero-title wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.4s">Indulge in a Luxurious<br /> Hotel Experience</h2>
+                           <h5 className="tp-hero-subtitle mb-15 wow img-custom-anim-top" data-wow-duration="1s" data-wow-delay="0.1s">Proyecto Dozzze</h5>
+                           <h2 className="tp-hero-title wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.4s">Excelencia hotelera que une diseño, tecnología y rentabilidad</h2>
+                           <p className="tp-hero-desc wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.5s" style={{ color: "#fff" }}>
+                              Creamos alojamientos que operan como relojes suizos: el huésped descansa mejor, los equipos rinden mejor y los inversores sueñan con nuestros resultados.
+                           </p>
                         </div>
                         <div className="tp-hero-btn-box  wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.4s">
                            <Link className="tp-btn" href="/about">
-                              <span className="explore-text">Explore More</span>
+                              <span className="explore-text">Conoce nuestra historia</span>
                               <span className="tp-arrow-angle">
                                  {" "}<UpArrow />
                               </span>
