@@ -42,11 +42,11 @@ export const gallery_swiper_options: SwiperOptions = {
 }
 
 const slider_images = [
-    '/assets/img/gellary/01.jpg',
-    '/assets/img/gellary/02.jpg',
-    '/assets/img/gellary/03.jpg',
-    '/assets/img/gellary/04.jpg',
-]
+    '/dozzze/imagenes hoteles/ATyco Madrid/630526607.jpg',
+    '/dozzze/imagenes hoteles/dozZze Romeo/715736150.jpg',
+    '/dozzze/imagenes hoteles/dozZze - maroto madrid/701123462.jpg',
+    '/dozzze/imagenes hoteles/dozZze-madrid Rio/693663943.jpg',
+].map((src) => encodeURI(src));
 
 export default function GallerySlider() {
     return (
@@ -55,7 +55,14 @@ export default function GallerySlider() {
             {slider_images.map((img, i) => (
                 <SwiperSlide key={i}>
                     <div className="tp-gallery-item">
-                        <Image className="w-100" src={img} alt="gallery" width={1032} height={578} style={{height:'auto'}} />
+                        <Image
+                            className="w-100"
+                            src={img}
+                            alt="gallery"
+                            width={1032}
+                            height={578}
+                            style={{ width: "100%", height: "580px", objectFit: "cover" }}
+                        />
                     </div>
                 </SwiperSlide>
             ))}

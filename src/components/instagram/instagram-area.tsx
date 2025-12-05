@@ -32,13 +32,13 @@ const swiper_options: SwiperOptions = {
 }
 
 const instagramData = [
-    { id: 1, imgSrc: "/assets/img/instagram/01.jpg", link: 'https://www.instagram.com/' },
-    { id: 2, imgSrc: "/assets/img/instagram/02.jpg", link: 'https://www.instagram.com/' },
-    { id: 3, imgSrc: "/assets/img/instagram/03.jpg", link: 'https://www.instagram.com/' },
-    { id: 4, imgSrc: "/assets/img/instagram/04.jpg", link: 'https://www.instagram.com/' },
-    { id: 5, imgSrc: "/assets/img/instagram/05.jpg", link: 'https://www.instagram.com/' },
-    { id: 6, imgSrc: "/assets/img/instagram/06.jpg", link: 'https://www.instagram.com/' },
-];
+    { id: 1, imgSrc: "/dozzze/imagenes hoteles/ATyco Madrid/630526627.jpg", link: 'https://www.instagram.com/' },
+    { id: 2, imgSrc: "/dozzze/imagenes hoteles/dozZze Romeo/715731871.jpg", link: 'https://www.instagram.com/' },
+    { id: 3, imgSrc: "/dozzze/imagenes hoteles/dozZze - maroto madrid/701123464.jpg", link: 'https://www.instagram.com/' },
+    { id: 4, imgSrc: "/dozzze/imagenes hoteles/dozZze-madrid Rio/696279522.jpg", link: 'https://www.instagram.com/' },
+    { id: 5, imgSrc: "/dozzze/imagenes hoteles/dozZze Romeo/716362443.jpg", link: 'https://www.instagram.com/' },
+    { id: 6, imgSrc: "/dozzze/imagenes hoteles/dozZze - maroto madrid/701123467.jpg", link: 'https://www.instagram.com/' },
+].map((item) => ({ ...item, imgSrc: encodeURI(item.imgSrc) }));
 
 export default function InstagramArea() {
     return (
@@ -51,7 +51,14 @@ export default function InstagramArea() {
                             <SwiperSlide key={item.id}>
                                 <div className="tp-instagram-thumb p-relative">
                                     <a className="popup-image" href={item.link} target="_blank">
-                                        <Image className="w-100" src={item.imgSrc} alt="instagram" width={308} height={260} />
+                                        <Image
+                                            className="w-100"
+                                            src={item.imgSrc}
+                                            alt="instagram"
+                                            width={308}
+                                            height={260}
+                                            style={{ width: "100%", height: "260px", objectFit: "cover" }}
+                                        />
                                         <div className="tp-instagram-icon p-absolute">
                                             <span><i className="fa-brands fa-instagram"></i></span>
                                         </div>
