@@ -8,6 +8,13 @@
 
 -----------------------------------------------------------------------------------
 
+/***********************************************************************************
+ * Global overrides
+ ***********************************************************************************/
+html {
+  scroll-behavior: smooth;
+}
+
 /************ TABLE OF CONTENTS ***************
 
 	-----------------
@@ -3071,9 +3078,12 @@ input[type=color] {
 .tp-main-menu nav ul li {
   list-style: none;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 20px;
   position: relative;
   transition: all 0.3s ease-out 0s;
+}
+.tp-main-menu nav ul li:last-child {
+  margin-right: 0;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-main-menu nav ul li {

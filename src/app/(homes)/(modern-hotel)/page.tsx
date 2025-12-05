@@ -20,27 +20,39 @@ export default function HomeModernHotelPage() {
       <main>
         
         {/* hero banner area */}
-        <HeroBanner/>
+        <section id="inicio">
+          <HeroBanner/>
+        </section>
         {/* hero banner area */}
 
         {/* who we are */}
-        <AboutWhoWeAre />
+        <section id="quienes-somos">
+          <AboutWhoWeAre />
+        </section>
         {/* who we are */}
 
         {/* about area start */}
-        <AboutArea/>
+        <section id="por-que-elegirnos">
+          <AboutArea/>
+        </section>
         {/* about area end */}
 
         {/* hotel room */}
-        <HotelRooms/>
+        <section id="habitaciones">
+          <HotelRooms/>
+        </section>
         {/* hotel room */}
 
         {/* hotel offer room */}
-        <HotelOfferRoom/>
+        <section id="ofertas">
+          <HotelOfferRoom/>
+        </section>
         {/* hotel offer room */}
 
         {/* hotel gallery */}
-        <HotelsGalleryArea/>
+        <section id="galeria">
+          <HotelsGalleryArea/>
+        </section>
         {/* hotel gallery */}
 
         {/* hotel packages */}
@@ -48,15 +60,21 @@ export default function HomeModernHotelPage() {
         {/* hotel packages */}
 
         {/* testimonial area */}
-        <TestimonialArea/>
+        <section id="testimonios">
+          <TestimonialArea/>
+        </section>
         {/* testimonial area */}
 
         {/* blog area */}
-        <BlogArea/>
+        <section id="blog">
+          <BlogArea/>
+        </section>
         {/* blog area */}
 
         {/* instagram area */}
-        <InstagramArea/>
+        <section id="comunidad">
+          <InstagramArea/>
+        </section>
         {/* instagram area */}
         
       </main>

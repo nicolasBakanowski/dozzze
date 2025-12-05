@@ -26,14 +26,14 @@ export default function HeaderOne({style_2}: IProps) {
                               </Link>
                            </div>
                         </div>
-                        <div className="col-xl-6 col-lg-8 d-none d-lg-block">
+                        <div className="col-xl-7 col-lg-8 d-none d-lg-block">
                            <div className="tp-main-menu">
                               {/* main menu */}
                               <NavMenus />
                               {/* main menu */}
                            </div>
                         </div>
-                        <div className="col-xl-4 col-lg-2 col-6">
+                        <div className="col-xl-3 col-lg-2 col-6">
                            <div className="tp-header-action d-flex justify-content-end">
                               <div className="tp-header-lang tp-black d-none d-lg-block">
                                  <button>EN</button>
