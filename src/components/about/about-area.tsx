@@ -23,7 +23,7 @@ export default function AboutArea() {
   return (
     <div
       className="tp-about-us-area tp-about-spacing tp-section-black p-relative"
-      style={{ paddingTop: "60px", paddingBottom: "30px" }}
+      style={{ marginTop: "40px", paddingTop: "60px", paddingBottom: "30px" }}
     >
       <div className="container">
         <div className="row">
