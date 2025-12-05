@@ -35,7 +35,7 @@ export default function HeaderOne({style_2}: IProps) {
                         </div>
                         <div className="col-xl-4 col-lg-2 col-6">
                            <div className="tp-header-action d-flex justify-content-end">
-                              <div className="tp-header-lang d-none d-lg-block">
+                              <div className="tp-header-lang tp-black d-none d-lg-block">
                                  <button>EN</button>
                                  <button>ES</button>
                               </div>
