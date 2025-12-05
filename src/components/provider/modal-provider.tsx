@@ -1,5 +1,5 @@
-'use client';
-import React, { useMemo } from "react";
+"use client";
+import React, { useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 
 type IProps = {
@@ -8,15 +8,21 @@ type IProps = {
 };
 
 export default function ModalProvider({ children, providerCls }: IProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const container = useMemo(() => {
-    if (typeof window === "undefined") return null;
+    if (!mounted) return null;
     const element = providerCls
       ? document.querySelector(`.${providerCls}`)
       : document.body;
     return element instanceof HTMLElement ? element : null;
-  }, [providerCls]);
+  }, [mounted, providerCls]);
 
-  if (!container) return null;
+  if (!mounted || !container) return null;
 
   return createPortal(<>{children}</>, container);
 }
