@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavMenus from "./components/nav-menus";
-import logo from '@/assets/img/logo/logo.png';
 import HeaderStickyProvider from "./components/header-sticky-provider";
 import OffcanvasBtn from "../offcanvas/offcanvas-btn";
+
+const LOGO_SRC = "/dozzze/logo.png";
 
 
 export default function HeaderTwo() {
@@ -16,7 +17,7 @@ export default function HeaderTwo() {
                             <div className="col-xl-2 col-lg-2 col-6">
                                 <div className="tp-header-logo">
                                     <Link href="/">
-                                        <Image data-width="138" src={logo} alt="logo" width={138}/>
+                                        <Image data-width="138" src={LOGO_SRC} alt="logo" width={138}/>
                                     </Link>
                                 </div>
                             </div>

@@ -13,6 +13,9 @@ const nextConfig: NextConfig = {
       {
         pathname: "/assets/img/**",
       },
+      {
+        pathname: "/dozzze/**",
+      },
     ],
   },
 };

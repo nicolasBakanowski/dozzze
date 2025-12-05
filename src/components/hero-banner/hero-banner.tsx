@@ -1,5 +1,4 @@
 import Link from "next/link";
-import SearchForm from "../search/search-form";
 import {NextArrow, PrevArrow, UpArrow } from "../svg";
 import HeroBannerSlider from "./slider/banner-slider";
 
@@ -39,17 +38,7 @@ export default function HeroBanner() {
                </div>
             </div>
          </div>
-         <div className="tp-hero-date-form">
-            <div className="container">
-               <div className="row justify-content-center">
-                  <div className="col-xxl-8 col-xl-9 col-lg-10 col-12">
-                     {/* search area */}
-                     <SearchForm/>
-                     {/* search area */}
-                  </div>
-               </div>
-            </div>
-         </div>
+         
       </div>
    )
 }
