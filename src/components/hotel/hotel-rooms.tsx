@@ -7,54 +7,39 @@ const highlightCards = [
     title: "Visión + Tecnología",
     text: "Convertimos ideas complejas en sistemas sencillos y escalables que cuidan cada plaza turística.",
     icon: (
-      <svg width="32" height="32" viewBox="0 0 40 40" fill="none" aria-hidden>
-        <path
-          d="M8 26l9.5-9.5L21 20l7.5-7.5"
-          stroke="#0E0E16"
-          strokeWidth="2.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path d="M24 12h4v4" stroke="#0E0E16" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
+      <Image
+        src="/dozzze/iconos/visiontecno.png"
+        width={80}
+        height={80}
+        alt="Icono de Visión y Tecnología"
+        style={{ width: "100px", height: "100px", objectFit: "contain" }}
+      />
     ),
   },
   {
     title: "Diseño con propósito",
     text: "Espacios que generan emociones, optimizan flujos y elevan la rentabilidad del activo.",
     icon: (
-      <svg width="32" height="32" viewBox="0 0 40 40" fill="none" aria-hidden>
-        <path
-          d="M13 28.5v-5.086a2 2 0 01.586-1.414l12-12a2 2 0 012.828 0v0a2 2 0 010 2.828l-12 12a2 2 0 01-1.414.586H13z"
-          stroke="#0E0E16"
-          strokeWidth="2.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path d="M22 16l2 2" stroke="#0E0E16" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
+      <Image
+        src="/dozzze/iconos/diseño.png"
+        width={80}
+        height={80}
+        alt="Icono de Diseño con propósito"
+        style={{ width: "80px", height: "80px", objectFit: "contain" }}
+      />
     ),
   },
   {
     title: "Obsesión por la excelencia",
     text: "Lo operativo, lo humano y lo digital trabajan como un engranaje afinado cada día.",
     icon: (
-      <svg width="32" height="32" viewBox="0 0 40 40" fill="none" aria-hidden>
-        <path
-          d="M20 24.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9z"
-          stroke="#0E0E16"
-          strokeWidth="2.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M20 12v-2m0 20v-2m8-8h2m-20 0h2m14.364-5.364L31 11m-22 18 4.636-4.636m0-8.728L9 11m22 18-4.636-4.636"
-          stroke="#0E0E16"
-          strokeWidth="2.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
+      <Image
+        src="/dozzze/iconos/excelencia.png"
+        width={80}
+        height={80}
+        alt="Icono de Obsesión por la excelencia"
+        style={{ width: "80px", height: "80px", objectFit: "contain" }}
+      />
     ),
   },
 ];
@@ -70,7 +55,8 @@ const showcaseProperties = [
     },
     guests: "4 huéspedes",
     size: "75 m²",
-    description: "Calle de Francisco Navacerrada, 13, Salamanca, 28028 Madrid, España.",
+    description:
+      "Calle de Francisco Navacerrada, 13, Salamanca, 28028 Madrid, España.",
     image: "/dozzze/imagenes hoteles/ATyco Madrid/630465984.jpg",
     cta: {
       label: "Reservar",
@@ -121,7 +107,8 @@ const showcaseProperties = [
     },
     guests: "4 huéspedes",
     size: "98 m²",
-    description: "Calle de la Escalinata, 1 Bajo, Centro, 28013 Madrid, España.",
+    description:
+      "Calle de la Escalinata, 1 Bajo, Centro, 28013 Madrid, España.",
     image: "/dozzze/imagenes hoteles/dozZze - maroto madrid/701123459.jpg",
     cta: {
       label: "Reservar",
@@ -173,9 +160,9 @@ export default function HotelRooms() {
                       <div
                         className="tp-room-highlight-icon"
                         style={{
-                          width: "64px",
-                          height: "64px",
-                          borderRadius: "24px",
+                          width: "96px",
+                          height: "96px",
+                          borderRadius: "32px",
                           background: "#f3f4f9",
                           display: "flex",
                           alignItems: "center",
@@ -185,8 +172,14 @@ export default function HotelRooms() {
                       >
                         {card.icon}
                       </div>
-                      <h3 style={{ fontSize: "20px", marginBottom: "12px" }}>{card.title}</h3>
-                      <p style={{ margin: 0, color: "#4f5362", lineHeight: 1.7 }}>{card.text}</p>
+                      <h3 style={{ fontSize: "20px", marginBottom: "12px" }}>
+                        {card.title}
+                      </h3>
+                      <p
+                        style={{ margin: 0, color: "#4f5362", lineHeight: 1.7 }}
+                      >
+                        {card.text}
+                      </p>
                     </article>
                   ))}
                 </div>
@@ -231,8 +224,16 @@ export default function HotelRooms() {
                       <Link
                         className="tp-btn-2"
                         href={property.cta.href}
-                        target={property.cta.href.startsWith("http") ? "_blank" : undefined}
-                        rel={property.cta.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                        target={
+                          property.cta.href.startsWith("http")
+                            ? "_blank"
+                            : undefined
+                        }
+                        rel={
+                          property.cta.href.startsWith("http")
+                            ? "noopener noreferrer"
+                            : undefined
+                        }
                       >
                         <span>
                           <Bookmark />
