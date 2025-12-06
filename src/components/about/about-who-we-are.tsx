@@ -9,7 +9,8 @@ export default function AboutWhoWeAre() {
           </h2>
           <p className="dozzze-story-card__body">
             Dos desarrolladores de un RMS hotelero, un emprendedor incansable y una diseñadora que convierte espacios en
-            experiencias memorables decidieron unir fuerzas.
+            experiencias memorables decidieron unir fuerzas para replantear la gestión y elevar el estándar de la
+            hospitalidad.
           </p>
           <p className="dozzze-story-card__body">
             La pregunta que nos guía desde entonces fue simple pero poderosa:{" "}
