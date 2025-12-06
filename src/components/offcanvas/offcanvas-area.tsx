@@ -30,7 +30,7 @@ export default function OffcanvasArea({ open, onClose }: IProps) {
                     <div className="tp-offcanvas-main">
                         <div className="tp-offcanvas-menu d-lg-none">
                             <nav>
-                                <OffcanvasMenus />
+                                <OffcanvasMenus onNavigate={onClose} />
                             </nav>
                         </div>
                     </div>
